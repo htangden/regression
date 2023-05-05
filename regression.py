@@ -1,18 +1,18 @@
 import math
 from functions import *
 
-epochs = 100
-lr = 5
+epochs = 1000000
+lr = 0.00001
 
-points = [(3, 2), (6, 9), (0, 3)]
-
+points = [(0, 2), (4, 10), (2,8)]
 
 a = 1
 b = 1
 c = 1
 
-update_values(a, b, c, points, lr)
 
-
-# for i in range(epochs):
-#     print("hi")
+for i in range(epochs):
+     a, b = update_values_linear(a, b, points, lr)
+     
+     
+print(a, b)
