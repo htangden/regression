@@ -6,7 +6,6 @@ def f(t):
     return np.exp(-t) * np.cos(2*np.pi*t)
 
 
-
 def plot_regression(f, points, label):
     bound = find_point_bounds(points)
     bound_diff = bound[1]-bound[0]

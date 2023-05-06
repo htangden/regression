@@ -9,9 +9,6 @@ def update_values_quadratic(a, b, c, points, lr):
         delta_a += a_change * -lr
         delta_b += b_change * -lr
         delta_c += c_change * -lr
-    delta_a / len(points)
-    delta_b / len(points)
-    delta_c / len(points)
     return a + delta_a, b + delta_b, c + delta_c
 
 def create_quadratic(a, b, c):
